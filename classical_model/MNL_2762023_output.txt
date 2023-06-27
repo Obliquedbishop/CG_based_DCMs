@@ -1,0 +1,238 @@
+Model run by Varun Varghese using Apollo 0.2.8 on R 4.0.3 for Windows.
+www.ApolloChoiceModelling.com
+
+Model name                                  : MNL_2762023
+Model description                           : MNL model with incentive data
+Model run at                                : 2023-06-27 15:51:02
+Estimation method                           : bfgs
+Model diagnosis                             : successful convergence 
+Number of individuals                       : 158
+Number of rows in database                  : 3086
+Number of modelled outcomes                 : 3086
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -3550.54
+LL at equal shares, LL(0)                   : -3550.54
+LL at observed shares, LL(C)                : -2732.3
+LL(final)                                   : -2489.47
+Rho-squared vs equal shares                  :  0.2988 
+Adj.Rho-squared vs equal shares              :  0.2966 
+Rho-squared vs observed shares               :  0.0889 
+Adj.Rho-squared vs observed shares           :  0.0859 
+AIC                                         :  4994.94 
+BIC                                         :  5043.22 
+
+Estimated parameters                        :  8
+Time taken (hh:mm:ss)                       :  00:00:1.31 
+     pre-estimation                         :  00:00:0.4 
+     estimation                             :  00:00:0.52 
+     post-estimation                        :  00:00:0.39 
+Iterations                                  :  21  
+Min abs eigenvalue of Hessian               :  27.08987 
+
+Unconstrained optimisation.
+
+These outputs have had the scaling used in estimation applied to them.
+Estimates:
+         Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+asc_1   -0.173201    0.085611     -2.0231     0.24517       -0.7065
+asc_2   -0.490740    0.157921     -3.1075     0.40714       -1.2053
+asc_3   -0.190631    0.114749     -1.6613     0.41920       -0.4547
+asc_4   -0.726152    0.113866     -6.3773     0.37804       -1.9208
+asc_5    0.036478    0.111535      0.3271     0.31456        0.1160
+b_tc    -0.001925  3.2816e-04     -5.8653  7.7086e-04       -2.4969
+b_tt    -0.059405    0.003642    -16.3092     0.01440       -4.1247
+b_inc    0.001954  2.5824e-04      7.5673  5.7873e-04        3.3767
+
+
+Overview of choices for MNL model component :
+                                   bike     bus     car  motor     pub    walk
+Times available                  831.00 2232.00 3086.00 369.00 2368.00 1716.00
+Times chosen                     249.00  168.00 1988.00 130.00  267.00  284.00
+Percentage chosen overall          8.07    5.44   64.42   4.21    8.65    9.20
+Percentage chosen when available  29.96    7.53   64.42  35.23   11.28   16.55
+
+
+Classical covariance matrix:
+            asc_1       asc_2       asc_3       asc_4       asc_5        b_tc        b_tt       b_inc
+asc_1    0.007329    0.001181    0.001672  9.2332e-04    0.003043   4.683e-06  -6.150e-05  -5.042e-06
+asc_2    0.001181    0.024939   -0.001013    0.012745    0.007904  -3.609e-05 -3.0249e-04  -8.802e-06
+asc_3    0.001672   -0.001013    0.013167 -4.9990e-04  9.3014e-04   5.849e-06   1.156e-05  -1.976e-06
+asc_4  9.2332e-04    0.012745 -4.9990e-04    0.012965    0.005105  -2.422e-05 -1.7662e-04  -8.698e-06
+asc_5    0.003043    0.007904  9.3014e-04    0.005105    0.012440  -1.475e-06 -2.8743e-04  -9.303e-06
+b_tc    4.683e-06  -3.609e-05   5.849e-06  -2.422e-05  -1.475e-06   1.077e-07   1.898e-07  -4.611e-09
+b_tt   -6.150e-05 -3.0249e-04   1.156e-05 -1.7662e-04 -2.8743e-04   1.898e-07   1.327e-05   1.368e-08
+b_inc  -5.042e-06  -8.802e-06  -1.976e-06  -8.698e-06  -9.303e-06  -4.611e-09   1.368e-08   6.669e-08
+
+Robust covariance matrix:
+            asc_1       asc_2       asc_3       asc_4       asc_5        b_tc        b_tt       b_inc
+asc_1    0.060108    0.050846    0.015920    0.023557    0.041273   1.114e-05   -0.001624  -6.705e-06
+asc_2    0.050846    0.165766    0.023567    0.115597    0.088078 -1.3736e-04   -0.004045  -9.291e-05
+asc_3    0.015920    0.023567    0.175731   -0.023354    0.021204   7.624e-05   -0.001888  -2.437e-05
+asc_4    0.023557    0.115597   -0.023354    0.142912    0.060606 -1.8365e-04   -0.002742  -6.907e-05
+asc_5    0.041273    0.088078    0.021204    0.060606    0.098950  -1.229e-05   -0.003386  -5.209e-05
+b_tc    1.114e-05 -1.3736e-04   7.624e-05 -1.8365e-04  -1.229e-05   5.942e-07   8.161e-07   8.461e-08
+b_tt    -0.001624   -0.004045   -0.001888   -0.002742   -0.003386   8.161e-07  2.0742e-04   1.950e-06
+b_inc  -6.705e-06  -9.291e-05  -2.437e-05  -6.907e-05  -5.209e-05   8.461e-08   1.950e-06   3.349e-07
+
+Classical correlation matrix:
+            asc_1       asc_2       asc_3       asc_4       asc_5        b_tc        b_tt       b_inc
+asc_1     1.00000     0.08736     0.17016     0.09472     0.31873     0.16668    -0.19723    -0.22805
+asc_2     0.08736     1.00000    -0.05592     0.70876     0.44872    -0.69647    -0.52588    -0.21583
+asc_3     0.17016    -0.05592     1.00000    -0.03826     0.07268     0.15533     0.02766    -0.06669
+asc_4     0.09472     0.70876    -0.03826     1.00000     0.40198    -0.64805    -0.42585    -0.29581
+asc_5     0.31873     0.44872     0.07268     0.40198     1.00000    -0.04030    -0.70752    -0.32301
+b_tc      0.16668    -0.69647     0.15533    -0.64805    -0.04030     1.00000     0.15879    -0.05441
+b_tt     -0.19723    -0.52588     0.02766    -0.42585    -0.70752     0.15879     1.00000     0.01454
+b_inc    -0.22805    -0.21583    -0.06669    -0.29581    -0.32301    -0.05441     0.01454     1.00000
+
+Robust correlation matrix:
+            asc_1       asc_2       asc_3       asc_4       asc_5        b_tc        b_tt       b_inc
+asc_1     1.00000      0.5094      0.1549      0.2542     0.53517     0.05893    -0.45981    -0.04726
+asc_2     0.50938      1.0000      0.1381      0.7510     0.68772    -0.43767    -0.68976    -0.39430
+asc_3     0.15490      0.1381      1.0000     -0.1474     0.16080     0.23592    -0.31271    -0.10044
+asc_4     0.25416      0.7510     -0.1474      1.0000     0.50965    -0.63021    -0.50360    -0.31572
+asc_5     0.53517      0.6877      0.1608      0.5097     1.00000    -0.05066    -0.74733    -0.28612
+b_tc      0.05893     -0.4377      0.2359     -0.6302    -0.05066     1.00000     0.07351     0.18965
+b_tt     -0.45981     -0.6898     -0.3127     -0.5036    -0.74733     0.07351     1.00000     0.23393
+b_inc    -0.04726     -0.3943     -0.1004     -0.3157    -0.28612     0.18965     0.23393     1.00000
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+    ID Avg prob per choice
+ 20043          0.04674543
+ 20048          0.06204932
+ 20068          0.08945980
+ 20180          0.09318823
+ 20074          0.09480826
+ 20104          0.10568064
+ 20101          0.12468998
+ 20067          0.12475550
+ 20126          0.12540032
+ 20139          0.14511011
+ 20141          0.14790773
+ 20167          0.14864649
+ 20103          0.16065399
+ 20144          0.16634389
+ 20012          0.17776079
+ 20210          0.20186622
+ 20087          0.20263308
+ 20026          0.20407362
+ 20174          0.20448359
+ 20145          0.21166407
+
+Changes in parameter estimates from starting values:
+          Initial    Estimate  Difference
+asc_1       0.000   -0.173201   -0.173201
+asc_2       0.000   -0.490740   -0.490740
+asc_3       0.000   -0.190631   -0.190631
+asc_4       0.000   -0.726152   -0.726152
+asc_5       0.000    0.036478    0.036478
+b_tc        0.000   -0.001925   -0.001925
+b_tt        0.000   -0.059405   -0.059405
+b_inc       0.000    0.001954    0.001954
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                                                          
+modelName              "MNL_2762023"                                                  
+modelDescr             "MNL model with incentive data"                                
+indivID                "user_id"                                                      
+outputDirectory        "D:/Machine learning project/Graph computational work/Results/"
+debug                  "FALSE"                                                        
+nCores                 "1"                                                            
+workInLogs             "FALSE"                                                        
+seed                   "13"                                                           
+mixing                 "FALSE"                                                        
+HB                     "FALSE"                                                        
+noValidation           "FALSE"                                                        
+noDiagnostics          "FALSE"                                                        
+calculateLLC           "TRUE"                                                         
+panelData              "TRUE"                                                         
+analyticGrad           "TRUE"                                                         
+analyticGrad_manualSet "FALSE"                                                        
+
+Hessian routines attempted
+--------------
+numerical jacobian of LL analytical gradient
+
+Scaling in estimation
+--------------
+            Value
+asc_1 0.173200608
+asc_2 0.490740044
+asc_3 0.190631103
+asc_4 0.726152355
+asc_5 0.036477848
+b_tc  0.001924761
+b_tt  0.059404595
+b_inc 0.001954171
+
+Scaling used in computing Hessian
+--------------
+            Value
+asc_1 0.173200621
+asc_2 0.490740025
+asc_3 0.190631105
+asc_4 0.726152106
+asc_5 0.036477848
+b_tc  0.001924761
+b_tt  0.059404503
+b_inc 0.001954171
+
+
+apollo_probabilities
+--------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  
+  ### Attach inputs and detach after function exit
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  ### Create list of probabilities P
+  P = list()
+  
+  ### Likelihood of choices
+  
+  V = list()
+  
+  V[['bike']] = asc_1 + b_tt*biketime+ b_inc*bicycleincentive 
+   
+  
+  
+  V[['bus']] = asc_2 + b_tc*buscost+ b_tt*bustime + b_inc*busincentive 
+  
+  
+  V[['car']] = b_tc*carcost+b_tt*cartime + b_inc*carincentive 
+  
+  V[['motor']] = asc_3+b_tc*motorcost+b_tt*motortime + b_inc*motorincentive 
+  
+  V[['pub']] = asc_4 + b_tc*pubcost+ b_tt*pubtime+ b_inc*trainincentive
+   
+  V[['walk']] =  asc_5 + b_tt*walktime+ b_inc*walkincentive 
+  
+  
+  
+  
+  ### Define settings for MNL model component
+  mnl_settings = list(
+    alternatives  = c(bike='bike', bus='bus', car='car', motor='motor', pub='pub', walk='walk'),#, taxi='taxi'
+    avail         = list(bike=bikeavail, bus=busavail, car=1, motor=motoravail, pub=pubavail, walk=walkavail), #,taxi=1
+    choiceVar     = mode,
+    V             = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}
+<bytecode: 0x0000020fb1650658>
