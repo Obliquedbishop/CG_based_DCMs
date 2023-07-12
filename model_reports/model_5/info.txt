@@ -1,0 +1,7 @@
+Trained on trips originating outside CBD.
+No outlier removal.
+No Standardization.
+No smote.
+No Tomek links.
+Parameters of Alternative specific variables under l2 penalty with lambda 0.
+Params of individual specific variables under l1 penalty with lambda 0.
