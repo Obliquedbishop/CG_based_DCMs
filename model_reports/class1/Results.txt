@@ -1,0 +1,3 @@
+NO individual specific variables
+training score: 0.701
+testing score: 0.545
