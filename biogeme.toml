@@ -1,10 +1,9 @@
 # Default parameter file for Biogeme 3.2.11
-# Automatically created on 2023-08-08
+# Automatically created on 2023-09-04
 
-[MultiThreading]
-number_of_threads = 0 # int: Number of threads/processors to be used. If the
-                      # parameter is 0, the number of available threads is
-                      # calculated using cpu_count().
+[TrustRegion]
+dogleg = "True" # bool: choice of the method to solve the trust region subproblem.
+                # True: dogleg. False: truncated conjugate gradient.
 
 [Estimation]
 save_iterations = "True" # bool: If True, the current iterate is saved after each
@@ -25,6 +24,11 @@ optimization_algorithm = "simple_bounds" # str: optimization algorithm to be use
                                          # 'simple_bounds_newton',
                                          # 'simple_bounds_BFGS']
 
+[MultiThreading]
+number_of_threads = 0 # int: Number of threads/processors to be used. If the
+                      # parameter is 0, the number of available threads is
+                      # calculated using cpu_count().
+
 [Output]
 identification_threshold = 1e-05 # float: if the smallest eigenvalue of the
                                  # second derivative matrix is lesser or equal to
@@ -40,19 +44,15 @@ generate_html = "True" # bool: "True" if the HTML file with the results must be
 generate_pickle = "True" # bool: "True" if the pickle file with the results must be
                          # generated.
 
-[TrustRegion]
-dogleg = "True" # bool: choice of the method to solve the trust region subproblem.
-                # True: dogleg. False: truncated conjugate gradient.
-
-[Specification]
-missing_data = 99999 # number: If one variable has this value, it is assumed that
-                     # a data is missing and an exception will be triggered.
-
 [MonteCarlo]
 number_of_draws = 20000 # int: Number of draws for Monte-Carlo integration.
 seed = 0 # int: Seed used for the pseudo-random number generation. It is useful
          # only when each run should generate the exact same result. If 0, a new
          # seed is used at each run.
+
+[Specification]
+missing_data = 99999 # number: If one variable has this value, it is assumed that
+                     # a data is missing and an exception will be triggered.
 
 [SimpleBounds]
 second_derivatives = 1.0 # float: proportion (between 0 and 1) of iterations when
