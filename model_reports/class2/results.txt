@@ -1,3 +1,0 @@
-Individual specific variables: [age, high_income, nearest_bus_dist, nearest_train_dist]
-Training score: 0.703
-Testing score: 0.486
