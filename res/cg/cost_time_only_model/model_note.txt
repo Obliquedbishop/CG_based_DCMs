@@ -1,0 +1,1 @@
+Trained using only travel cost and travel time via BFGS on Outside CBD data.
